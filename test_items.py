@@ -4,9 +4,8 @@ import time
 
 class TestSwitchLanguages:
 
-    def test_check_visible_button_add_to_basket(self, browser, request):
-        lang = request.config.getoption("language")
-        link = f"http://selenium1py.pythonanywhere.com/{lang}/catalogue/coders-at-work_207/"
+    def test_check_visible_button_add_to_basket(self, browser):
+        link = f"http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 
         browser.get(link)
         time.sleep(30)
